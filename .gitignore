@@ -1,0 +1,29 @@
+# ---- Python 缓存与编译产物 ----
+__pycache__/
+*.py[cod]
+*.so
+
+# ---- 虚拟环境（体积大，别人用 requirements.txt 自己装）----
+.venv/
+venv/
+env/
+
+# ---- 密钥与本地配置 ----
+.env
+*.key
+
+# ---- matplotlib / 运行产生的图片（截图请放 docs/images/）----
+# 程序运行会在当前目录生成 png，不希望每次都进版本库时取消下一行的注释
+# *.png
+!docs/images/*.png
+
+# ---- IDE 与系统文件 ----
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- 临时文件 ----
+*.log
+~$*
